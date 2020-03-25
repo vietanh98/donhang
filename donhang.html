@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KantanJSC</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome.css" rel="stylesheet" />
+    <link href="owl.carousel2.css" rel="stylesheet" />
+    <link href="owl.theme2.css" rel="stylesheet" />
+    <link href="menu-2.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="setmedia.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="menu-2.js"></script>
+    <script type="text/javascript" src="style-img.js"></script>
+    <script type="text/javascript" src="init.js"></script>
+    <script type="text/javascript" src="owl.carousel2.min.js"></script>
+    <link rel="stylesheet" href="validationEngine.jquery.css">
+    <script src="jquery.validationEngine-vi.js" charset="utf-8"></script>
+    <script src="jquery.validationEngine.js"></script>
+</head>
+
+<body>
+    <script>
+        setTimeout(function () {
+            $('#show_success_mss').fadeOut().empty();
+        }, 5000);
+
+        function base_url() {
+            return 'http://tokyo.net.vn/';
+        }
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+            $(".slider_banner").owlCarousel({
+
+                items: 1,
+                responsive: {
+                    1200: { item: 1 }, // breakpoint from 1200 up
+                    982: { items: 1 },
+                    768: { items: 1 },
+                    480: { items: 1 },
+                    0: { items: 1 }
+                },
+                loop: true,
+                rewind: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+                smartSpeed: 500, //slide speed smooth
+
+                dots: false,
+                dotsEach: false,
+                nav: true,
+                navText: ['<i class="fa fa-angle-left icon_slider"></i>', '<i class="fa fa-angle-right icon_slider"></i>'],
+                // navSpeed: 250, //slide speed when click button
+
+                autoWidth: false,
+                margin: 0,
+
+                lazyContent: false,
+                lazyLoad: false,
+
+                animateIn: false,
+                animateOut: false,
+
+                center: false,
+                URLhashListener: false,
+
+                video: false,
+                videoHeight: false,
+                videoWidth: false
+            });
+
+            $(".slider_max_news").owlCarousel({
+
+                items: 1,
+                responsive: {
+                    1200: { item: 1 }, // breakpoint from 1200 up
+                    982: { items: 1 },
+                    768: { items: 1 },
+                    480: { items: 1 },
+                    0: { items: 1 }
+                },
+                loop: true,
+                rewind: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+                smartSpeed: 500, //slide speed smooth
+
+                dots: false,
+                dotsEach: false,
+                nav: true,
+                navText: ['<i class="fa fa-angle-left icon_slider"></i>', '<i class="fa fa-angle-right icon_slider"></i>'],
+                // navSpeed: 250, //slide speed when click button
+
+                autoWidth: false,
+                margin: 0,
+
+                lazyContent: false,
+                lazyLoad: false,
+
+                animateIn: false,
+                animateOut: false,
+
+                center: false,
+                URLhashListener: false,
+
+                video: false,
+                videoHeight: false,
+                videoWidth: false
+            });
+            $("a[href='#top']").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 200) {
+                    $('#go_top').show();
+                }
+                else {
+                    $('#go_top').hide();
+                }
+            });
+
+        });
+
+    </script>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.1&appId=245939402730423&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+        function base_url() {
+            return $('#base_url').val();
+        }
+    </script>
+    <article id="header">
+
+        <div class="menu_mb butt_mobile visible-xs visible-sm clearfix">
+            <button class="nav-toggle">
+                <div class="icon-menu">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </div>
+            </button>
+            <div class="text-center">
+                <a href="http://tokyo.net.vn/"><img class="img_logo_mb"
+                        src="http://tokyo.net.vn/upload/img/logo/hrm_logo.png"
+                        alt="XUẤT KHẨU LAO ĐỘNG NHẬT BẢN 2020"></a>
+            </div>
+        </div><!-- /menu_mb -->
+        <div class="clearfix clearfix-60 visible-sm visible-xs"></div>
+
+        <section class="qts_header">
+            <div class="container">
+                <div class="row_pc">
+                    <div class="top_head">
+                        <ul class="ul_top_head">
+                            <li class="hidden-xs"><a href="">Diễn đàn</a></li>
+                            <li class="hidden-xs"><a href="">Du học</a></li>
+                            <li><a href="javascript:void(0)" onclick="registerModal()">Đăng ký</a></li>
+                            <li><a href="javascript:void(0)" onclick="loginModal()">Đăng nhập</a></li>
+
+                            <li class="hidden-xs"><a href="">Sitemap</a></li>
+                            <li class="eng_stl"><a href=""><img src="http://tokyo.net.vn/assets/css/img/eng_1.png"
+                                        alt=""></a>
+                            </li>
+                            <li class="eng_stl"><a href=""><img src="http://tokyo.net.vn/assets/css/img/eng_2.png"
+                                        alt=""></a>
+                            </li>
+                            <li class="eng_stl"><a href=""><img src="http://tokyo.net.vn/assets/css/img/eng_3.png"
+                                        alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="bot_head">
+                        <div class="logo_pc hidden-sm hidden-xs">
+                            <a href="http://tokyo.net.vn/"><img src="http://tokyo.net.vn/upload/img/logo/hrm_logo.png"
+                                    alt="XUẤT KHẨU LAO ĐỘNG NHẬT BẢN 2020"></a>
+                        </div>
+                        <div class="sologan_head">
+                            <h1>XUẤT KHẨU LAO ĐỘNG NHẬT BẢN 2020</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qts_menu_main">
+
+            <div class="container">
+
+                <div class="row_pc">
+
+                    <div class="menu_main">
+
+                        <nav class="nav is-fixed" role="navigation">
+
+                            <div class="wrapper wrapper-flush">
+
+                                <div class="nav-container">
+                                    <ul class="nav-menu menu clearfix">
+                                        <li class="menu-item active"><a href="trangchu.html" class="menu-link">Trang
+                                                chủ</a>
+                                        </li>
+                                        <li class="menu-item has-dropdown"><a class="menu-link ">Đơn hàng </a>
+                                            <ul class="nav-dropdown menu">
+                                                <li class="menu-item">
+                                                    <a href="donhang.html" title="XUẤT KHẨU LAO ĐỘNG"
+                                                        class="menu-link">XUẤT KHẨU LAO
+                                                        ĐỘNG
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="donhang2.html"
+                                                        title="ĐƠN HÀNG QUAY LẠI LẦN 2" class="menu-link">ĐƠN HÀNG QUAY
+                                                        LẠI LẦN 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown">
+                                            <a href="http://tokyo.net.vn/danh-muc-tin/du-hoc-nhat-ban.html"
+                                                class="menu-link ">Du học
+                                            </a>
+                                            <ul class="nav-dropdown menu">
+                                                <li class="menu-item">
+                                                    <a href="http://tokyo.net.vn/danh-muc-tin/du-hoc-nhat-ban.html"
+                                                        title="DU HỌC NHẬT BẢN " class="menu-link">DU HỌC NHẬT BẢN
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="http://tokyo.net.vn/danh-muc-tin/du-hoc-han-quoc.html"
+                                                        title="DU HỌC HÀN QUỐC" class="menu-link">DU HỌC HÀN QUỐC
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown"><a
+                                                href="http://tokyo.net.vn/danh-muc-tin/tuyen-cong-tac-vien.html"
+                                                class="menu-link ">Tuyển dụng </a>
+                                            <ul class="nav-dropdown menu">
+                                                <li class="menu-item">
+                                                    <a href="http://tokyo.net.vn/danh-muc-tin/nhan-su-cong-ty.html"
+                                                        title="TUYỂN DỤNG NHÂN SỰ" class="menu-link">TUYỂN DỤNG NHÂN
+                                                        SỰ
+                                                    </a>
+                                                </li>
+
+
+                                                <li class="menu-item">
+                                                    <a href="http://tokyo.net.vn/danh-muc-tin/tuyen-nhan-su-dia-phuong.html"
+                                                        title="NHÂN SỰ ĐỊA PHƯƠNG" class="menu-link">NHÂN SỰ ĐỊA
+                                                        PHƯƠNG</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown">
+                                            <a href="gioithieu.html" class="menu-link ">Giới
+                                                thiệu
+                                            </a>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown"><a
+                                                href="tintuc.html"
+                                                class="menu-link ">Tin tức </a>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown"><a href=""
+                                                class="menu-link ">Video </a>
+                                        </li>
+
+                                        <li class="menu-item has-dropdown"><a href="lienhe.html"
+                                                class="menu-link ">Liên hệ </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <style type="text/css">
+        .img_new_po img {
+            width: 202px;
+        }
+
+        .table {
+            margin-bottom: inherit;
+        }
+    </style>
+    <!-- <div class="clearfix-30"></div> -->
+    <article id="content_home">
+        <section class="top_tit_xc">
+            <section class="qts_content_ad">
+                <div class="container">
+                    <div class="row_pc">
+                        <div class="top_arce top_arce2">
+                            <div class="title_top_kj title_top_kj_prt">
+                                <a href="trangchu.html">Trang chủ</a>
+                                <span><i class="fa fa-angle-double-right"></i></span>
+                                <a href="javascript:void()">Xuất khẩu lao động</a>
+                            </div>
+                            <div class="title_jsc">
+                                <ul class="ul_time_date">
+                                    <li>
+                                        <div id="clock"></div>
+                                        <script
+                                            type="text/javascript"> function refrClock() { var d = new Date(); var s = d.getSeconds(); var m = d.getMinutes(); var h = d.getHours(); var day = d.getDay(); var date = d.getDate(); var month = d.getMonth(); var year = d.getFullYear(); var days = new Array("Chủ nhật", "Thứ hai", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"); var months = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"); var am_pm; if (s < 10) { s = "0" + s } if (m < 10) { m = "0" + m } if (h > 12) { h -= 12; AM_PM = "PM" } else { AM_PM = "AM" } if (h < 10) { h = "0" + h } document.getElementById("clock").innerHTML = days[day] + " Ngày " + date + "/" + months[month] + "/" + year + " - " + " [" + h + ":" + m + ":" + s + "] " + AM_PM; setTimeout("refrClock()", 1000); } refrClock(); </script>
+                                    </li>
+                                    <div class="hidden">
+                                        
+                                        <li>
+                                            <div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+                                                <h4>A PHP Error was encountered</h4>
+                                                <p>Severity: Notice</p>
+                                                <p>Message: Undefined variable: time_now</p>
+                                                <p>Filename: home/view_home.php</p>
+                                                <p>Line Number: 17</p>
+                                                <p>Backtrace:</p>
+                                                <p style="margin-left:10px">
+                                                    File:
+                                                    /home/tokyo0318/domains/tokyo.net.vn/public_html/application/views/home/view_home.php<br>
+                                                    Line: 17<br>
+                                                    Function: _error_handler </p>
+                                                <p style="margin-left:10px">
+                                                    File:
+                                                    /home/tokyo0318/domains/tokyo.net.vn/public_html/application/controllers/Home.php<br>
+                                                    Line: 169<br>
+                                                    Function: view </p>
+                                                <p style="margin-left:10px">
+                                                    File: /home/tokyo0318/domains/tokyo.net.vn/public_html/index.php<br>
+                                                    Line: 314<br>
+                                                    Function: require_once </p>
+                                            </div>08:00:00 GMT
+                                        </li>
+                                    </div>
+                                </ul>
+                                <span><img src="http://tokyo.net.vn/assets/css/img/rss.png" alt="rss"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                <div class="fl_detl">
+                                    <div class="page_rrt_ct">
+                                        <div class="directory">
+                                            <div class="left">
+                                                <div class="lastitem"><a href="javascript:void()"><span>Xuất khẩu lao
+                                                            động</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="right">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="listnews1">
+                                        <div class="listing">
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-lai-may-xay-dung-tuyen-18-ban-nam-lam-viec-tai-miyazaki.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/van-hanh-may-xay-dung.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG LÁI MÃY XÂY DỰNG TUYỂN 18 BẠN NAM LÀM VIỆC TẠI MIYAZAKI"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-lai-may-xay-dung-tuyen-18-ban-nam-lam-viec-tai-miyazaki.html">THÔNG
+                                                        BÁO ĐƠN HÀNG LÁI MÃY XÂY DỰNG TUYỂN 18 BẠN NAM LÀM VIỆC TẠI
+                                                        MIYAZAKI</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    23:34 05/3/2020 </div>
+                                                <div class="description">Công ty xin thông báo tuyển 18 bạn nam làm lái
+                                                    máy xúc, máy ủi, làm việc tại các tập đoàn xây dựng hàng đầu Nhật
+                                                    Bản, với mức lương vô cùng cao, thời gian làm thêm nhiều, giám đốc
+                                                    công ty cực tốt, phụ cấp ăn, đi lại, 1 năm thưởng 2 lần, nếu các bạn
+                                                    làm tốt có thể gia hạn luôn 2 năm&nbsp;và không cần về nước.
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-lai-may-xay-dung-tuyen-18-ban-nam-lam-viec-tai-miyazaki.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-san-xuat-linh-kien-nhua-tuyen-18-ban-nu-lam-viec-tai-hiroshima.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/san-xuat-nhua2.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG SẢN XUẤT LINH KIỆN NHỰA TUYỂN 18 BẠN NỮ LÀM VIỆC TẠI HIROSHIMA"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-san-xuat-linh-kien-nhua-tuyen-18-ban-nu-lam-viec-tai-hiroshima.html">THÔNG
+                                                        BÁO ĐƠN HÀNG SẢN XUẤT LINH KIỆN NHỰA TUYỂN 18 BẠN NỮ LÀM VIỆC
+                                                        TẠI HIROSHIMA</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    22:41 24/2/2020 </div>
+                                                <div class="description">Công ty xin thông báo tuyển gấp 18 bạn nữ làm
+                                                    sản xuất linh kiện nhựa tại FUKUSHIMA, đây là nghiệp đoàn đã lấy rất
+                                                    nhiều lao động ( thực tập sinh ) sang đó làm việc, với công việc làm
+                                                    thêm cực kỳ nhiều, mức lương rất cao nghiệp đoàn hỗi chợ nhiều cho
+                                                    lao động vui lòng liên hệ Zalo hoặc Hotline : 0981466883 để biết
+                                                    thông thông tin chi tiết về đơn hàng và còn nhiều các đơn hàng khác
+                                                    nữa nhé&nbsp;
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-san-xuat-linh-kien-nhua-tuyen-18-ban-nu-lam-viec-tai-hiroshima.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thit-truyen-thong-tuyen-35-ban-nu.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/don-hang-che-bien-thi-nhat-ban.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG CHẾ BIẾN THỊT TRUYỀN THỐNG TUYỂN 35 BẠN NỮ"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thit-truyen-thong-tuyen-35-ban-nu.html">THÔNG
+                                                        BÁO ĐƠN HÀNG CHẾ BIẾN THỊT TRUYỀN THỐNG TUYỂN 35 BẠN NỮ</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    22:46 01/3/2020 </div>
+                                                <div class="description">Công tin xin thống báo đơn hàng thực phẩm chế
+                                                    biến thịt truyền thống, đây là công ty thực phẩm rất lớn và uy tín
+                                                    tại Nhật Bản, họ có hàng trăm lao đông chế biến các loại thịt phục
+                                                    vụ cho siêu thị cho nên công việc cự kỳ ổn định, thời gian làm thêm
+                                                    rất nhiều, bác chủ xí nghiệp cực kỳ tốt với lao động cho nên đây là
+                                                    đơn hàng không thể bỏ qua khi các bạn đang muốn tìm hiểu sang Nhật
+                                                    Làm việc.
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thit-truyen-thong-tuyen-35-ban-nu.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thuc-pham-tai-ibaraki-tuyen-24-ban-nu.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/che-bien-thuc-pham-gia-vi-nhat-ban.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG CHẾ BIẾN THỰC PHẨM TẠI IBARAKI TUYỂN 24 BẠN NỮ"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thuc-pham-tai-ibaraki-tuyen-24-ban-nu.html">THÔNG
+                                                        BÁO ĐƠN HÀNG CHẾ BIẾN THỰC PHẨM TẠI IBARAKI TUYỂN 24 BẠN NỮ</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    22:35 24/2/2020 </div>
+                                                <div class="description">Công ty xin thông báo đơn hàng chế biến thực
+                                                    phẩm gia vị làm việc tại Ibaraki Nhật Bản, gia vị là thành phần
+                                                    không thể thiếu được trong các món ăn, nhất là với một đất nước có
+                                                    nền ẩm thực phong phú như Nhật Bản, cho nên việc chế biến và sản
+                                                    xuất các gia vị ở Nhật rất phát triển, các bạn sẽ được làm việc
+                                                    trong nhà máy sản xuất ra vị hiện đại bậc nhất Nhật Bản, với nhiều
+                                                    chính sách đã ngộ rất tốt từ công ty, thời gian làm thêm rất nhiều.
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thuc-pham-tai-ibaraki-tuyen-24-ban-nu.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/cong-ty-xin-thong-bao-don-hang-gian-giao-tuyen-40-ban-nam-lam-viec-tai-ibaraki.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/lap-gian-giao-nhat-ban.jpg"
+                                                                alt="CÔNG TY XIN THÔNG BÁO ĐƠN HÀNG GIÀN GIÁO TUYỂN 40 BẠN NAM LÀM VIỆC TẠI IBARAKI"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/cong-ty-xin-thong-bao-don-hang-gian-giao-tuyen-40-ban-nam-lam-viec-tai-ibaraki.html">CÔNG
+                                                        TY XIN THÔNG BÁO ĐƠN HÀNG GIÀN GIÁO TUYỂN 40 BẠN NAM LÀM VIỆC
+                                                        TẠI IBARAKI</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    22:30 24/2/2020 </div>
+                                                <div class="description">Nhiều bạn Nam khi đi xuất khẩu lao động tại
+                                                    Nhật Bản thưởng hay nghĩ và hay nghe mọi người nói,
+
+                                                    - Đi xuất khẩu lao động phải chọn việc nhẹ nhàng lương cao, làm
+                                                    trong nhà xưởng?
+
+                                                    Xin thưa khi chúng ta đã xác định đi xuất khẩu lao động (tts) thì
+                                                    không có công việc nào là nhẹ nhàng và lương cao cả, đã đi làm việc
+                                                    thì phải vất vả mới có mức lương cao, và chịu khó làm thêm mới có
+                                                    tiển gửi về cho gia đình.
+
+                                                    - Những ngành xây dựng thì không có làm thêm.
+
+                                                    Xin thưa với các bạn ngành nghề nào cũng có đơn hàng làm thêm nhiều
+                                                    hay làm thêm ít, do vậy đơn hàng xây dựng cũng không nằm ngoài điều
+                                                    đó, đơn hàng xây dựng phí đi là 3 năm nhưng có thể gia hạn 5 năm.
+
+                                                    &nbsp;
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/cong-ty-xin-thong-bao-don-hang-gian-giao-tuyen-40-ban-nam-lam-viec-tai-ibaraki.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-dong-goi-cong-nghiep-tuyen-36-ban-nu-lam-viec-tai-hiroshima.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/dong-goi-cong-nghiep-hang-hoa-tms.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG ĐÓNG GÓI CÔNG NGHIỆP TUYỂN 36 BẠN NỮ LÀM VIỆC TẠI HIROSHIMA"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-dong-goi-cong-nghiep-tuyen-36-ban-nu-lam-viec-tai-hiroshima.html">THÔNG
+                                                        BÁO ĐƠN HÀNG ĐÓNG GÓI CÔNG NGHIỆP TUYỂN 36 BẠN NỮ LÀM VIỆC TẠI
+                                                        HIROSHIMA</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    01:04 13/2/2020 </div>
+                                                <div class="description">Công ty xin thông báo đơn hàng đóng gói công
+                                                    nghiệp giành cho các bạn nữ, với công việc làm phân phối hàng hóa
+                                                    trong trung tâm,&nbsp;thời gian làm việc là rất nhiều cho nên đây là
+                                                    đơn hàng có thời gian làm thêm nhiều nhất trong tháng 9&nbsp;này,
+                                                    với điều kiện làm việc là rất tốt tại xí nghiệp truyền thống của
+                                                    công ty, đơn hàng này sẽ là đơn hàng mang về thu nhập cực kỳ cao cho
+                                                    các bạn lao động vậy còn trờ gì nữa các bạn hãy gọi ngay 0981466883
+                                                    để biết thêm thông tin chi tiết về đơn hàng và hãy là ứng viên nộp
+                                                    hồ sơ sớm nhất để biến ước mơ của mình thành hiện thực.
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-dong-goi-cong-nghiep-tuyen-36-ban-nu-lam-viec-tai-hiroshima.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-18-ban-nam-lam-bao-duong-o-to-okayama.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/bao-duong-sua-chua-o-to-tms.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG TUYỂN 18 BẠN NAM LÀM BẢO DƯỠNG Ô TÔ OKAYAMA"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-18-ban-nam-lam-bao-duong-o-to-okayama.html">THÔNG
+                                                        BÁO ĐƠN HÀNG TUYỂN 18 BẠN NAM LÀM BẢO DƯỠNG Ô TÔ OKAYAMA</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    00:26 13/2/2020 </div>
+                                                <div class="description">Công ty xin thông báo tuyển gấp 18&nbsp;bạn
+                                                    nam, có kinh nghiệm làm sửa chữa ô tô, cơ khí làm việc tại Xí
+                                                    Nghiệp&nbsp;chuyền thống với mức lương cực kỳ cao, thời gian làm
+                                                    thêm nhiều, nghiệp đoàn tốt, bay nhanh.
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-18-ban-nam-lam-bao-duong-o-to-okayama.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nam-lam-moc-xay-dung.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/xay-dung-tong-hop-1.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG TUYỂN 30 BẠN NAM LÀM MỘC XÂY DỰNG"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nam-lam-moc-xay-dung.html">THÔNG
+                                                        BÁO ĐƠN HÀNG TUYỂN 30 BẠN NAM LÀM MỘC XÂY DỰNG</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    00:19 13/2/2020 </div>
+                                                <div class="description">Công ty xin thông báo đơn hàng mộc&nbsp;xây
+                                                    dựng&nbsp;truyền thống hiện tại đang có các bạn lao động của Việt
+                                                    Nam làm việc và sắp hết hạn về nước, công ty tiếp tục tuyển bù các
+                                                    bạn mới sang làm việc và thay thế các bạn cũ đã hết hạn hợp đồng.
+
+                                                    - Mức lương tháng rất cao, làm thêm nhiều
+
+                                                    - Chế đỗ đãi ngộ lao động cực kỳ tốt, thưởng hoàn thành công việc,
+                                                    thưởng quý, thưởng năm, hỗi chợ đi lại nhà ở
+
+                                                    - Hết hạn làm việc 3 năm TTS ( lao động ) có sẽ được gia hạn thêm 2
+                                                    năm nếu các bạn có nguyện vọng ở lại công ty làm việc
+
+                                                    &nbsp; &nbsp; &nbsp; ĐỂ BIẾT THÊM THÔNG TIN CHI TIẾT VỀ ĐƠN HÀNG VÀ
+                                                    CÁC ĐƠN HÀNG KHÁC VUI LÒNG GỌI HOTLINE : 0981466883
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nam-lam-moc-xay-dung.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-tuyen-18-ban-nu-lam-san-xuat-nhua-tai-fukushima.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/san-xuat-nhua-sinh-hoat.png"
+                                                                alt="THÔNG BÁO TUYỂN 18 BẠN NỮ LÀM SẢN XUẤT NHỰA TẠI FUKUSHIMA"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-tuyen-18-ban-nu-lam-san-xuat-nhua-tai-fukushima.html">THÔNG
+                                                        BÁO TUYỂN 18 BẠN NỮ LÀM SẢN XUẤT NHỰA TẠI FUKUSHIMA</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    22:05 29/1/2020 </div>
+                                                <div class="description">Công ty xin thông báo đơn hàng sản xuất nhựa,
+                                                    kiểm tra và đóng gói sản phẩm, với công việc đứng máy, nhặt sản
+                                                    phẩm, kiểm tra sản phẩm lỗi, với khối lượng công việc lớn nên tăng
+                                                    ca hàng ngày rất nhiều, mức lương thưởng theo tháng, quý rất cao,
+                                                    mọi chi tiết xin liên hệ Hotline : 0981466883
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-tuyen-18-ban-nu-lam-san-xuat-nhua-tai-fukushima.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="news firstitem">
+                                                <div class="image_container">
+                                                    <div class="image_cell"><a
+                                                            href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nu-lam-dong-goi-banh-keo-tai-gifu.html"><img
+                                                                class="image_news"
+                                                                src="http://tokyo.net.vn/upload/img/news/dong-goi-banh-keo-nhat-ban.jpg"
+                                                                alt="THÔNG BÁO ĐƠN HÀNG TUYỂN 30 BẠN NỮ LÀM ĐÓNG GÓI BÁNH KẸO TẠI GIFU"></a>
+                                                    </div>
+                                                </div>
+                                                <h2 class="title"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nu-lam-dong-goi-banh-keo-tai-gifu.html">THÔNG
+                                                        BÁO ĐƠN HÀNG TUYỂN 30 BẠN NỮ LÀM ĐÓNG GÓI BÁNH KẸO TẠI GIFU</a>
+                                                </h2>
+
+                                                <div class="create_time"><span class="crateTimeTitle">Thời gian đăng
+                                                        :</span>
+                                                    10:34 30/1/2020 </div>
+                                                <div class="description">Công ty xin thống báo đến các bạn đơn hàng đóng
+                                                    gói bánh kẹo của xí nghiệp truyền thống, ở xí nghiệp hiện tại đã có
+                                                    các bạn lao động&nbsp;đang làm việc bện đó, với mức lương rất cao,
+                                                    và thời gian làm thêm rất là nhiều,&nbsp;chủ xí nghiệp rất&nbsp;tốt,
+                                                    các bạn sẽ được thưởng quý, và thưởng năm,&nbsp;
+                                                </div>
+                                                <div class="viewmore"><a
+                                                        href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nu-lam-dong-goi-banh-keo-tai-gifu.html">Đọc
+                                                        tiếp<i class="fa fa-angle-double-right"></i></a></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="catalog_page">
+                                                <div class="page_content">
+                                                    <ul class="pagination phantrang">
+                                                        <li class="disabled"></li>
+                                                        <li class="active"><a href="#">1<span
+                                                                    class="sr-only"></span></a></li>
+                                                        <li><a href="http://tokyo.net.vn/danh-muc-tin/xuat-khau-lao-dong.html?per_page=10"
+                                                                data-ci-pagination-page="2">2</a></li>
+                                                        <li><a href="http://tokyo.net.vn/danh-muc-tin/xuat-khau-lao-dong.html?per_page=20"
+                                                                data-ci-pagination-page="3">3</a></li>
+                                                        <li><a href="http://tokyo.net.vn/danh-muc-tin/xuat-khau-lao-dong.html?per_page=10"
+                                                                data-ci-pagination-page="2" rel="next">&gt;</a></li>
+                                                        <li><a href="http://tokyo.net.vn/danh-muc-tin/xuat-khau-lao-dong.html?per_page=60"
+                                                                data-ci-pagination-page="7">Trang cuối</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix-30 hidden-lg hidden-md"></div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="full_right_lkj">
+                                    <div class="clearfix"></div>
+                                    <div class="box_right_tl">
+                                        <div class="top_title">
+                                            <span><a href="http://tokyo.net.vn/danh-muc-tin/tin-moi" title="TIN MỚI">TIN
+                                                    MỚI</a></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <ul class="ul_li_td">
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/nguoi-huyen-ngheo-di-xuat-khau-lao-dong-duoc-vay-100-von-uu-dai">NGƯỜI
+                                                    HUYỆN NGHÈO ĐI XUẤT KHẨU LAO ĐỘNG ĐƯỢC VAY 100% VỐN ƯU ĐÃI</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/li-xi-nam-moi-gianh-cho-cac-ban-lao-dong-nop-ho-so-truc-tiep-tai-cong-ty">LÌ
+                                                    XÌ NĂM MỚI GIÀNH CHO CÁC BẠN LAO ĐỘNG NỘP HỒ SƠ TRỰC TIẾP TẠI CÔNG
+                                                    TY</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/nhung-dau-hieu-nhan-biet-cong-ty-xuat-khau-lao-dong-uy-tin">NHỮNG
+                                                    DẤU HIỆU NHẬN BIẾT CÔNG TY XUẤT KHẨU LAO ĐỘNG UY TÍN</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/uu-dai-lon-doi-voi-thuc-tap-sinh-lao-dong-ap-dung-trong-nam-2018">Ưu
+                                                    đãi lớn đồi với thực tập sinh ( Lao động ) áp dụng trong năm
+                                                    2018</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="box_right_tl">
+                                        <div class="top_title">
+                                            <span><a href="javascript:void()" title="hỗ trợ trục tuyến">hỗ trợ trục
+                                                    tuyến</a></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <ul class="ul_li_td ul_li_td2">
+                                            <li>
+                                                <p class="hot_line"><span>Hotline: </span><a
+                                                        href="tel:0981466883">0981466883</a></p>
+                                            </li>
+                                            <li>
+                                                <p class="name_kh">Mr Sinh </p>
+                                                <p class="hot_min">Điện thoại: <a href="tel:0981466883">0981466883</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="name_kh">Ms Thủy </p>
+                                                <p class="hot_min">Điện thoại: <a href="tel:0974892384">0974892384</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="name_kh">Mr Cường </p>
+                                                <p class="hot_min">Điện thoại: <a href="tel:0986996443">0986996443</a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="box_right_tl">
+                                        <div class="top_title">
+                                            <span><a href="" title="Giới thiệu về trung tâm">Giới thiệu về trung
+                                                    tâm</a></span>
+                                        </div>
+                                        <iframe width="100%" src="https://www.youtube.com/embed/A54AhzHbpOk"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen=""></iframe>
+                                        <ul class="list_video">
+                                            <li data-toggle="modal" data-target="#myModal3" style="cursor:pointer;">
+                                                CTy XKLD NHẬT BẢN HÀ NỘI HR LIÊN HỆ Mr SINH 0981466883 </li>
+                                            <div id="myModal3" class="modal fade" role="dialog"
+                                                style="opacity: 1; overflow: visible;">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <iframe width="100%"
+                                                                src="https://www.youtube.com/embed/A54AhzHbpOk"
+                                                                frameborder="0"
+                                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                                allowfullscreen=""></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="clearfix"></div>
+                                    <div class="box_right_tl">
+                                        <div class="top_title">
+                                            <span><a href="http://tokyo.net.vn/danh-muc-tin/don-hang-moi-nhat"
+                                                    title="ĐƠN HÀNG MỚI NHẤT">ĐƠN HÀNG MỚI NHẤT</a></span>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <ul class="ul_li_td">
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-san-xuat-linh-kien-nhua-tuyen-18-ban-nu-lam-viec-tai-hiroshima">THÔNG
+                                                    BÁO ĐƠN HÀNG SẢN XUẤT LINH KIỆN NHỰA TUYỂN 18 BẠN NỮ LÀM VIỆC TẠI
+                                                    HIROSHIMA</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thit-truyen-thong-tuyen-35-ban-nu">THÔNG
+                                                    BÁO ĐƠN HÀNG CHẾ BIẾN THỊT TRUYỀN THỐNG TUYỂN 35 BẠN NỮ</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thuc-pham-tai-ibaraki-tuyen-24-ban-nu">THÔNG
+                                                    BÁO ĐƠN HÀNG CHẾ BIẾN THỰC PHẨM TẠI IBARAKI TUYỂN 24 BẠN NỮ</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/cong-ty-xin-thong-bao-don-hang-gian-giao-tuyen-40-ban-nam-lam-viec-tai-ibaraki">CÔNG
+                                                    TY XIN THÔNG BÁO ĐƠN HÀNG GIÀN GIÁO TUYỂN 40 BẠN NAM LÀM VIỆC TẠI
+                                                    IBARAKI</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-dong-goi-cong-nghiep-tuyen-36-ban-nu-lam-viec-tai-hiroshima">THÔNG
+                                                    BÁO ĐƠN HÀNG ĐÓNG GÓI CÔNG NGHIỆP TUYỂN 36 BẠN NỮ LÀM VIỆC TẠI
+                                                    HIROSHIMA</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-18-ban-nam-lam-bao-duong-o-to-okayama">THÔNG
+                                                    BÁO ĐƠN HÀNG TUYỂN 18 BẠN NAM LÀM BẢO DƯỠNG Ô TÔ OKAYAMA</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nam-lam-moc-xay-dung">THÔNG
+                                                    BÁO ĐƠN HÀNG TUYỂN 30 BẠN NAM LÀM MỘC XÂY DỰNG</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-tuyen-18-ban-nu-lam-san-xuat-nhua-tai-fukushima">THÔNG
+                                                    BÁO TUYỂN 18 BẠN NỮ LÀM SẢN XUẤT NHỰA TẠI FUKUSHIMA</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-tuyen-30-ban-nu-lam-dong-goi-banh-keo-tai-gifu">THÔNG
+                                                    BÁO ĐƠN HÀNG TUYỂN 30 BẠN NỮ LÀM ĐÓNG GÓI BÁNH KẸO TẠI GIFU</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-gia-cong-co-khi-van-hang-may-phay-may-cat-kim-loai-tuyen-21-ban-nam">THÔNG
+                                                    BÁO ĐƠN HÀNG GIA CÔNG CƠ KHÍ VẬN HÀNG MÁY PHAY, MÁY CẮT KIM LOẠI
+                                                    TUYỂN 21 BẠN NAM</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-thuc-pham-tuyen-125-ban-nam-va-125-ban-nu">THÔNG
+                                                    BÁO ĐƠN HÀNG THỰC PHẨM TUYỂN 125 BẠN NAM VÀ 125 BẠN NỮ</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-tuyen-54-ban-nam-lam-dong-goi-cong-nghiep-tai-tinh-yamaguchi">THÔNG
+                                                    BÁO TUYỂN 54 BẠN NAM LÀM ĐÓNG GÓI CÔNG NGHIỆP TẠI TỈNH YAMAGUCHI</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-nong-nghiep-trong-hoa-tuyen-18-ban-nu-lam-viec-tai-ibaraki">THÔNG
+                                                    BÁO ĐƠN HÀNG NÔNG NGHIỆP TRỒNG HOA TUYỂN 18 BẠN NỮ LÀM VIỆC TẠI
+                                                    IBARAKI</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-gia-cong-cot-thep-buoc-thep-tuyen-18-ban-nam">THÔNG
+                                                    BÁO ĐƠN HÀNG GIA CÔNG CỐT THÉP ( BUỘC THÉP ) TUYỂN 18 BẠN NAM</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-do-an-kem-tuyen-30-ban-nu">THÔNG
+                                                    BÁO ĐƠN HÀNG CHẾ BIẾN ĐỒ ĂN KÈM TUYỂN 30 BẠN NỮ </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-cot-pha-tuyen-30-ban-nam">THÔNG
+                                                    BÁO ĐƠN HÀNG CỐT PHA TUYỂN 30 BẠN NAM </a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-tuyen-12-ban-nu-lam-nong-nghiep-trong-hoa-cuc-tai-aichi">THÔNG
+                                                    BÁO TUYỂN 12 BẠN NỮ LÀM NÔNG NGHIỆP TRỒNG HOA CÚC TẠI AICHI</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-son-kim-loai-tuyen-12-ban-nam-va-12-ban-nu">THÔNG
+                                                    BÁO ĐƠN HÀNG SƠN KIM LOẠI TUYỂN 12 BẠN NAM VÀ 12 BẠN NỮ</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-co-khi-tuyen-24-ban-nam-lam-han-tai-ibaraki">THỐNG
+                                                    BÁO ĐƠN HÀNG CƠ KHÍ TUYỂN 24 BẠN NAM LÀM HÀN TẠI IBARAKI</a>
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-circle"></i>
+                                                <a
+                                                    href="http://tokyo.net.vn/new/thong-bao-don-hang-che-bien-thuy-san-tuyen-21-nam-va-18-nu-lam-viec-tai-tokyo">THÔNG
+                                                    BÁO ĐƠN HÀNG CHẾ BIẾN THỦY SẢN TUYỂN 21 NAM VÀ 18 NỮ LÀM VIỆC TẠI
+                                                    TOKYO</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="right_qc">
+                                        <a href=""><img src="http://tokyo.net.vn/upload/img/banner/right-qc.png"
+                                                alt="banner2"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="clearfix-30"></div>
+        <div class="clearfix"></div>
+
+        <article id="footer">
+            <section class="qts_footer_top">
+                <div class="container">
+                    <div class="row_pc">
+                        <div class="top_footer">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="text_t">
+                                        "Chúng tôi luôn sẵn sàng khi bạn cần!"
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <form class="validate form_search" action="http://tokyo.net.vn/contact/add_email"
+                                        method="post">
+                                        <div class="input-group">
+                                            <input type="text" name="email"
+                                                class="form-control validate[required,custom[email]]"
+                                                placeholder="Đăng ký nhận bản tin miễn phí">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="submit">Đăng ký</button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                $(document).ready(function () {
+                    $(".validate").validationEngine();
+                });
+            </script>
+            <section class="qts_footer_bot">
+                <div class="container">
+                    <div class="top_fgdd">
+                        <div class="row_pc">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="text_tt_ft">
+                                        <p><b>CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ NHÂN LỰC SỐ 1 HÀ NỘI</b></p>
+                                        <p><i class="fa fa-map-marker"></i><strong>Địa
+                                                chỉ:</strong> Tầng 2, Tháp A Tòa nhà golden palace, Mễ Trì, Phường Mễ
+                                            Trì, Quận Nam Từ Liêm, Tp. Hà Nội </p>
+                                        <p>
+                                            <i class="fa fa-envelope"></i><strong>Email:</strong>
+                                            sinhhanoitokyo@gmail.com </p>
+                                        <p><i class="fa fa-phone"></i><strong>Hotline:</strong> 0981466883 </p>
+                                        <p>
+                                            <i class="glyphicon glyphicon-globe"></i><strong>Website: </strong>
+                                            http://tokyo.net.vn </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-480-12">
+                                    <div class="map_ft">
+                                        <div class="box_map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.524147061498!2d105.77279741422498!3d21.011703586007606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454a7aaa2d9fb%3A0x64fa663d0567a132!2sFood+Vina!5e0!3m2!1svi!2s!4v1543992763024"
+                                                width="600" height="450" frameborder="0" style="border:0"
+                                                allowfullscreen=""></iframe> </div>
+                                        <style type="text/css">
+                                            .box_map iframe {
+                                                width: 100%;
+                                                height: 170px;
+                                            }
+                                        </style>
+                                        <div class="box_map hidden">
+                                            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                                            <script type="text/javascript"
+                                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0GQodtNqyzSl3JuS7xmIJvsCwjS8maZw&amp;language=vi"></script>
+                                            <script>
+                                                function initialize2() {
+                                                    var myLatlng = new google.maps.LatLng(21.0116893, 105.77506100000005);
+                                                    var mapOptions = {
+                                                        zoom: 15,
+                                                        center: myLatlng,
+                                                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                                                    }
+                                                    var map = new google.maps.Map(document.getElementById('map_canvas2'), mapOptions);
+
+                                                    var marker = new google.maps.Marker({
+                                                        position: myLatlng,
+                                                        map: map,
+                                                        title: 'Incopro London'
+                                                    });
+
+                                                }
+
+                                                google.maps.event.addDomListener(window, 'load', initialize2);
+                                            </script>
+                                            <style type="text/css">
+                                                body {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                }
+                                            </style>
+
+                                            <div id="map_canvas2"
+                                                style="height: 169px; width: 100%; display: none; position: relative; overflow: hidden;">
+                                                <div
+                                                    style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                                    <div style="overflow: hidden;"></div>
+                                                    <div class="gm-style"
+                                                        style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                                        <div tabindex="0"
+                                                            style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+                                                            <div
+                                                                style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                        <div
+                                                                            style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -226, -26);">
+                                                                            <div
+                                                                                style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                                                        <div
+                                                                            style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -226, -26);">
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;">
+                                                                        <img alt=""
+                                                                            src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png"
+                                                                            draggable="false"
+                                                                            style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="gm-style-pbc"
+                                                                style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                                                <p class="gm-style-pbt"></p>
+                                                            </div>
+                                                            <div
+                                                                style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                                                <div
+                                                                    style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                                        <div title="Incopro London"
+                                                                            style="width: 43px; height: 59px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -22px; top: -51px; z-index: 0;">
+                                                                            <img alt=""
+                                                                                src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2_hdpi.png"
+                                                                                draggable="false"
+                                                                                style="position: absolute; left: 0px; top: 0px; width: 43px; height: 59px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><iframe aria-hidden="true" frameborder="0" tabindex="-1"
+                                                            style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-480-12">
+
+                                    <div class="fb-page fb_iframe_widget fb_iframe_widget_fluid" data-href="https://www.facebook.com/laodong.tmsnhatban/" data-tabs="timeline" data-height="169" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=245939402730423&amp;container_width=381&amp;height=169&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Flaodong.tmsnhatban%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline"><span style="vertical-align: bottom; width: 340px; height: 169px;"><iframe name="f142b9047b5761" width="1000px" height="169px" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v3.1/plugins/page.php?adapt_container_width=true&amp;app_id=245939402730423&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df2b139ce4670064%26domain%3Dtokyo.net.vn%26origin%3Dhttp%253A%252F%252Ftokyo.net.vn%252Ff2be70059b4b234%26relation%3Dparent.parent&amp;container_width=381&amp;height=169&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Flaodong.tmsnhatban%2F&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline" style="border: none; visibility: visible; width: 340px; height: 169px;" class=""></iframe></span></div>
+    
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </article>
+
+    </article>
+
+</body>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+</html>
